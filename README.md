@@ -1,4 +1,4 @@
-WeChat Mini Program Personal Developer Skill
+# WeChat Mini Program Personal Developer Skill
 
 一个供 Codex 使用的中文 skill，帮助个人开发者在微信小程序的选题、设计和开发早期发现可能影响备案、类目、隐私合规和审核发布的问题。
 
