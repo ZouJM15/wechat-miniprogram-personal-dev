@@ -86,3 +86,22 @@ $wechat-miniprogram-personal-dev
 ## 重要边界
 
 服务类目、主体能力、备案流程、接口和审核规范会变化。Skill 会要求针对具体项目核对当时的微信官方文档和登录后的公众平台后台，并标出未确认事项。它能帮助提前发现常见风险，但不能保证审核通过，也不能替代平台给出的正式审核结论或法律意见。
+
+## 维护者：发布到 GitHub
+
+1. 在 GitHub 新建 `wechat-miniprogram-personal-dev` 仓库；可选择公开或私有。初次推送时建议不要初始化 README、License 或 `.gitignore`，避免与本地文件冲突。
+2. 确认 `SKILL.md`、`README.md` 和 `references/` 位于仓库根目录。
+3. 检查没有 AppID / AppSecret、访问令牌、真实用户数据或审核账号密码。
+4. 在本地 skill 文件夹中运行以下命令，将 `<GitHub用户名>` 换成仓库所有者：
+
+   ```powershell
+   git init -b main
+   git add SKILL.md README.md references
+   git commit -m "Add WeChat Mini Program personal developer skill"
+   git remote add origin https://github.com/<GitHub用户名>/wechat-miniprogram-personal-dev.git
+   git push -u origin main
+   ```
+
+   如果已经初始化过 Git，跳过 `git init -b main`；如果已经有 `origin`，使用 `git remote set-url origin <仓库地址>` 更新地址。GitHub 可能会要求通过浏览器或 Git Credential Manager 登录。
+
+仓库发布后，把仓库地址分享给使用者，他们按上面的安装步骤即可使用。
